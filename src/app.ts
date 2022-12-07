@@ -4,7 +4,8 @@ import { permissionConfig } from './config';
 import { authRouter } from './routes';
 import { BasicJsonResponse, TypedResponse } from './types';
 import { ROUTER_ENDPOINTS } from './types/postman';
-import Provider from 'oidc-provider';
+import { Provider } from 'oidc-provider';
+
 const configuration = {
   // refer to the documentation for other available configuration
 };
@@ -16,11 +17,11 @@ console.log({oidc});
  */
 const app = express();
 
+
 /**
  * Used to display information about incoming HTTP requests in the terminal
  */
 app.use(morgan('dev'));
-
 // app.use(oidc.callback())
 /**
  * Authorizing parsing of JSON body and URL encoded requests
