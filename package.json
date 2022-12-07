@@ -33,6 +33,7 @@
     "@types/module-alias": "^2.0.1",
     "@types/morgan": "^1.9.3",
     "@types/node": "^18.11.11",
+    "@types/oidc-provider": "^8.0.0",
     "@types/postman-collection": "^3.5.7",
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "@typescript-eslint/parser": "^5.45.1",
