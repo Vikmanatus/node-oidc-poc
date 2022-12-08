@@ -69,5 +69,3 @@ You simply have to import it in the Postman application, and then you will be re
 
 - [Used to configure signed commits on `VSCode`](https://dev.to/devmount/signed-git-commits-in-vs-code-36do#:~:text=Set%20up%20VS%20Code,Enables%20commit%20signing%20with%20GPG%E2%80%9D.&text=And%20that%27s%20it!,integration%20and%20sign%20your%20work.)
 
-
-Error: require() of ES Module /node_modules/oidc-provider/lib/index.js from /src/app.js not supported. Instead change the require of index.js in /src/app.js to a dynamic import() which is available in all CommonJS modules.

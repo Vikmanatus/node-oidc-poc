@@ -4,10 +4,11 @@ import { permissionConfig } from './config';
 import { authRouter } from './routes';
 import { BasicJsonResponse, TypedResponse } from './types';
 import { ROUTER_ENDPOINTS } from './types/postman';
-import { Provider } from 'oidc-provider';
+import { Configuration, Provider } from 'oidc-provider';
 
-const configuration = {
+const configuration:Configuration = {
   // refer to the documentation for other available configuration
+  
 };
 
 const oidc = new Provider('http://localhost:5050', configuration);
