@@ -4,20 +4,12 @@ import { permissionConfig } from './config';
 import { authRouter } from './routes';
 import { BasicJsonResponse, TypedResponse } from './types';
 import { ROUTER_ENDPOINTS } from './types/postman';
-import { Configuration, Provider } from 'oidc-provider';
 
-const configuration:Configuration = {
-  // refer to the documentation for other available configuration
-  
-};
 
-const oidc = new Provider('http://localhost:5050', configuration);
-console.log({oidc});
 /**
  * Global express application
  */
 const app = express();
-
 
 /**
  * Used to display information about incoming HTTP requests in the terminal
@@ -51,6 +43,5 @@ app.use((_req, res: TypedResponse<BasicJsonResponse>) => {
     success: false,
   });
 });
-
 
 export default app;

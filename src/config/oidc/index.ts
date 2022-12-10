@@ -1,0 +1,13 @@
+import { Configuration, Provider } from 'oidc-provider';
+import { cookies_keys } from '../index';
+
+const configuration: Configuration = {
+  cookies: {
+    keys: cookies_keys,
+  },
+  features: { devInteractions: { enabled: false } },
+  // refer to the documentation for other available configuration
+};
+
+const oidc = new Provider('http://localhost:5050', configuration);
+console.log({ oidc });

@@ -9,10 +9,14 @@ import {
   REQUEST_TYPES,
 } from '@/types/postman';
 
+// import Keygrip from 'keygrip';
 
 dotenv.config({
   path: '.env',
 });
+
+export const cookies_keys = ['SECRET1', 'SECRET2', 'SECRET3']
+
 /**
  * This object is used to configure our project
  * We define the URL of the endpoint, the authroized roles and the match URL passed
