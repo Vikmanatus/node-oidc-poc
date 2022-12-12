@@ -1,4 +1,5 @@
-import { Request, Response } from 'express';
+import { Request, Response, Router } from 'express';
+import { Provider } from 'oidc-provider';
 
 /**
  * This type will be used to override the body defined in the Express json() method
@@ -17,10 +18,18 @@ export interface TypedRequestBody<Type> extends Request {
   body: Type;
 }
 
+export interface GenericApiError<T = unknown> extends BasicJsonResponse {
+  error: T;
+}
+
 /**
  * This interface represents the basic schema used in many requests where we don't need to send data
  */
 export interface BasicJsonResponse {
   message: string;
   success: boolean;
+}
+
+export interface ExpressOidcRouter extends Router {
+  provider: Provider;
 }
