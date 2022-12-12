@@ -16,6 +16,7 @@ server.listen(PORT, () => {
     .then((result) => {
       console.log('DB name: ', result.options.dbName);
       console.log(`Server listening on port ${PORT}`);
+      console.log(process.env.NODE_ENV);
     })
     .catch((err: MongoError) => {
       if (server.listening) {
