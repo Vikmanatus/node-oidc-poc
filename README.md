@@ -8,6 +8,14 @@ Please open a terminal and run the following command:
 yarn install
 ```
 
+### 🔐 Generating SSL certificate for development
+
+Please open a terminal and run the following command:
+
+```bash
+bash ./setup/ssl/generate.ssl.sh
+```
+
 ## 🖥 Run the project
 
 Please open a first terminal and run the following command:
@@ -68,4 +76,3 @@ You simply have to import it in the Postman application, and then you will be re
 - [Used to fix local `gpg` keychain issue](https://stackoverflow.com/questions/39780452/prevent-gpg-password-prompt-on-mac)
 
 - [Used to configure signed commits on `VSCode`](https://dev.to/devmount/signed-git-commits-in-vs-code-36do#:~:text=Set%20up%20VS%20Code,Enables%20commit%20signing%20with%20GPG%E2%80%9D.&text=And%20that%27s%20it!,integration%20and%20sign%20your%20work.)
-
